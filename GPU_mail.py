@@ -25,7 +25,7 @@ class GPURobber:
         self.SMTP_SERVER = 'xxx.126.com'
         self.SSL_PORT = '465'
         self.USER_PWD = "XXXXXXXXXX"
-        self.mail_list = ['xxx@126.com']
+        self.mail_list = ['xxx@126.com','yyy@qq.com']
 
     def check_gpus(self):
         if not 'NVIDIA System Management' in os.popen('nvidia-smi -h').read():
