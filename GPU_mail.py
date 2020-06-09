@@ -121,7 +121,7 @@ class GPURobber:
                     time.sleep(5)
                     send = self.send_mail(to, "GPU is available", "".join(str(gpus)))
                     print("send to " + to)
-            # 如果最近发送过邮件，且发送的内容相同，则休眠10分钟
+            # 如果最近发送过邮件，则休眠1小时
             if send:
                 time.sleep(mail_cd)
             # 每分钟扫描一次
